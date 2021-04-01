@@ -2,6 +2,6 @@
 
 int main()
 {
-    sc_printf("Hello from David\n");
+    sc_printf("Hello from Phase 1\n");
     return 0;
 }
