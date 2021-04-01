@@ -147,6 +147,12 @@ parameter bit [`SCR1_DMEM_AWIDTH-1:0]   SCR1_TCM_ADDR_PATTERN       = 'h00480000
 parameter bit [`SCR1_DMEM_AWIDTH-1:0]   SCR1_TIMER_ADDR_MASK        = 'hFFFFFFE0;       // Timer mask
 parameter bit [`SCR1_DMEM_AWIDTH-1:0]   SCR1_TIMER_ADDR_PATTERN     = 'h00490000;       // Timer address match pattern
 
+// Adding address constants for GPIO Peripheral
+parameter bit [`SCR1_DMEM_AWIDTH-1:0]   SCR1_GPIO_ADDR_MASK          = 'hFFFF0000;       // GPIO mask and size; size in bytes is two's complement of the mask value
+parameter bit [`SCR1_DMEM_AWIDTH-1:0]   SCR1_GPIO_ADDR_PATTERN       = 'h00500000;       // GPIO address match patter
+
+
+
 // Device build ID
  `define SCR1_ARCH_BUILD_ID             `SCR1_MIMPID
 
